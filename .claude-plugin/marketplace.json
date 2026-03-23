@@ -1,7 +1,2228 @@
 {
-  "name": "claude-plugins-community",
+  "name": "claude-community",
   "owner": {
     "name": "Anthropic"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "ac-artifact-workflow",
+      "description": "Artifact-driven development workflow inspired by Google Antigravity. Produces task lists, implementation plans, and walkthroughs to keep you engaged during AI-assisted development.",
+      "source": {
+        "source": "git-subdir",
+        "url": "AlteredCraft/claude-code-plugins",
+        "path": "plugins/artifact-workflow",
+        "ref": "main",
+        "sha": "bee1e93db72ed4b29288e6a8b4234b5b9264e73d"
+      },
+      "homepage": "https://github.com/AlteredCraft/claude-code-plugins/tree/main/plugins/artifact-workflow"
+    },
+    {
+      "name": "adcp-client",
+      "description": "Adds the /adcp skill for calling AdCP advertising agent tools over MCP or A2A, running protocol compliance scenarios, and querying the AdCP registry. Includes built-in test agents for zero-config use.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/adcontextprotocol/adcp-client.git",
+        "sha": "5a679d3cd5f6f91d3a9c9f8c3ae1c5784ce6c363"
+      },
+      "homepage": "https://github.com/adcontextprotocol/adcp-client"
+    },
+    {
+      "name": "adspirer-ads-agent",
+      "description": "Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/amekala/adspirer-mcp-plugin.git",
+        "sha": "aa70dbdbbbb843e94a794c10c2b13f5dd66b5e40"
+      },
+      "homepage": "https://www.adspirer.com"
+    },
+    {
+      "name": "adversarial-review",
+      "description": "Adversarial planning and code review workflow between Claude Code and OpenAI Codex CLI. Enables iterative convergence loops where Claude creates plans/code and Codex provides critical review.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/bobby-beckmann/adversarial-review.git",
+        "sha": "032e9a1a92d18b15f19ac812256a9068f66dea70"
+      },
+      "homepage": "https://github.com/bobby-beckmann/adversarial-review"
+    },
+    {
+      "name": "adversarial-spec",
+      "description": "Iteratively refine product specs through multi-model debate until consensus. Claude actively participates alongside GPT, Gemini, Grok, and other models. Includes interview mode, early agreement verification, and optional Telegram integration.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zscole/adversarial-spec.git",
+        "sha": "f90cf0c36c3999b8dc272c9c06dee9846076f369"
+      },
+      "homepage": "https://github.com/zscole/adversarial-spec"
+    },
+    {
+      "name": "agent-discussion",
+      "description": "Coordinate multi-agent debates across different AI platforms (Claude Code, Antigravity, Copilot, Gemini CLI, etc.) using a shared file protocol. Each agent reads one skill and handles everything autonomously — intros, turn-taking, and consensus.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cyrusxyl/agent-discussion.git",
+        "sha": "67334880155400eff11c76b6e4cb3537240738f2"
+      },
+      "homepage": "https://github.com/cyrusxyl/agent-discussion"
+    },
+    {
+      "name": "agent-manager",
+      "description": "Spawn and manage autonomous background agents with persistent state across sessions",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/devhimanshulohani/claude-agent-manager.git",
+        "sha": "3190613a8db815421bf96e7a2b9379bc55cc8b66"
+      },
+      "homepage": "https://github.com/devhimanshulohani/claude-agent-manager#readme"
+    },
+    {
+      "name": "agent-recall",
+      "description": "Persistent memory for AI coding agents. SQLite knowledge graph with scoped entities, MCP tools, and LLM-summarized briefings.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mnardit/agent-recall.git",
+        "sha": "2aee46340fab0868415f642e963f02116c67794c"
+      },
+      "homepage": "https://max.nardit.com/agent-recall"
+    },
+    {
+      "name": "ai-adoption-playbook",
+      "description": "Structured AI adoption framework for leaders — diagnostic assessments, blocker analysis, rollout plans, and board-ready narratives",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/adimango/ai-adoption-playbook.git",
+        "sha": "15d93e576a55761a055ef9783532dcf4c1f78d5b"
+      },
+      "homepage": "https://github.com/adimango/ai-adoption-playbook"
+    },
+    {
+      "name": "ai-firstify",
+      "description": "AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the TechWolf AI-First Bootcamp",
+      "source": {
+        "source": "git-subdir",
+        "url": "techwolf-ai/ai-first-toolkit",
+        "path": "plugins/ai-firstify",
+        "ref": "main",
+        "sha": "7f18e11d694b9ae62ea3009fbbc175f08ae913df"
+      },
+      "homepage": "https://ai-first.techwolf.ai"
+    },
+    {
+      "name": "ai-plugins",
+      "description": "Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/endorlabs/ai-plugins.git",
+        "sha": "a0f1d5632b6f9e6c26eaa9806f5d8d454ca5b06f"
+      },
+      "homepage": "https://www.endorlabs.com"
+    },
+    {
+      "name": "ai-statusline",
+      "description": "AI-powered status line customization - Interactive setup and edit wizards for configuring Claude Code's status line with progress bars and customizable display options",
+      "source": {
+        "source": "git-subdir",
+        "url": "charlesjones-dev/claude-code-plugins-dev",
+        "path": "plugins/ai-statusline",
+        "ref": "main",
+        "sha": "47125b37720882bfa64cf2c7863cd3e5e01a5901"
+      },
+      "homepage": "https://github.com/charlesjones-dev/claude-code-plugins-dev"
+    },
+    {
+      "name": "aikido",
+      "description": "Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
+        "sha": "d7fa8b8e192680d9a26c1a5dcaead7cf5cdb7139"
+      },
+      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin"
+    },
+    {
+      "name": "amazon-location-service",
+      "description": "Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices.",
+      "category": "location",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/amazon-location-service",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "arcanum",
+      "description": "Advanced debugging, code review, deep research, technical documentation, creative ideation, and semi-autonomous development workflows with parallel theory validation, team-based research, war room investigation, root cause analysis, PR review assistance, elite technical writing, and Maestro development pipeline",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/burnsbert/claude-arcanum.git",
+        "sha": "206e3005d368225eed1188562b1108b57e84fd2e"
+      },
+      "homepage": "https://github.com/burnsbert/claude-arcanum"
+    },
+    {
+      "name": "astronomer-data-agents",
+      "description": "Data engineering for Apache Airflow and Astronomer. Author DAGs with best practices, debug pipeline failures, trace data lineage, profile tables, migrate Airflow 2 to 3, and manage local and cloud deployments.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/astronomer/agents.git",
+        "sha": "7ef022b02f5296b5ecc52ba0db3ba9345ec03c9e"
+      },
+      "homepage": "https://github.com/astronomer/agents"
+    },
+    {
+      "name": "atlan",
+      "description": "Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/atlanhq/agent-toolkit.git",
+        "sha": "acdf284da6aa98b14f8dad90a9827006d8df425c"
+      },
+      "homepage": "https://docs.atlan.com/"
+    },
+    {
+      "name": "attune-lite",
+      "description": "Six developer workflow commands for Claude Code: code review, security audit, test generation, test fixing, bug prediction, and documentation generation.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Smart-AI-Memory/attune-lite.git",
+        "sha": "03b297ef870f8c7654a0ab150fb585168d7bb7a8"
+      },
+      "homepage": "https://smartaimemory.com/attune-lite/"
+    },
+    {
+      "name": "auto-approve-compound-bash",
+      "description": "Auto-approve compound Bash commands (pipes, chains, subshells) by parsing each segment via shfmt AST and checking against allow/deny lists",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/oryband/claude-code-auto-approve.git",
+        "sha": "b9a20d11ed890b389d7ee5b848572ce2d75d04c2"
+      },
+      "homepage": "https://github.com/oryband/claude-code-auto-approve"
+    },
+    {
+      "name": "auto-memory",
+      "description": "Automatically maintains CLAUDE.md files as codebases evolve using hooks, agents, and skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/severity1/claude-code-auto-memory.git",
+        "sha": "9185226d835f84220358dd4572b77af18507882a"
+      },
+      "homepage": "https://github.com/severity1/claude-code-auto-memory"
+    },
+    {
+      "name": "avicenna",
+      "description": "Code knowledge graph MCP extension — semantic code search, symbol lookup, and dependency analysis powered by tree-sitter and vector embeddings",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/smrf1093/Avicenna.git",
+        "sha": "77884f2b10776a03342ab6484ccc715d9db00594"
+      },
+      "homepage": "https://smrf1093.github.io/Avicenna/"
+    },
+    {
+      "name": "aws-serverless",
+      "description": "Design, build, deploy, test, and debug serverless applications with AWS Serverless services.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/aws-serverless",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "bake-claude-md-files",
+      "description": "Converts CLAUDE.md rules into automated checks, freeing up agent context.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/publicala/bake-claude-md-files.git",
+        "sha": "094ad5c31ecd5bb875c4d71a09048674fb28aa94"
+      },
+      "homepage": "https://github.com/publicala/bake-claude-md-files"
+    },
+    {
+      "name": "better-dev",
+      "description": "[meta] better development: CSS workflows, Firebase development, code quality, real testing, parallel exploration, documentation verification, and token-efficient codegen",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "better-dev",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "billingplane",
+      "description": "Guardrails-first Stripe billing integration. Audit existing billing code, discover requirements, implement bulletproof billing, and validate edge cases. Zero runtime dependencies — knowledge stays in your codebase.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kamesh231/billingplane.git",
+        "sha": "dd8a4850602ece6dfbf13c2796e09b28257d309c"
+      },
+      "homepage": "https://www.billingplane.com/"
+    },
+    {
+      "name": "bitcoin-companies",
+      "description": "Bitcoin treasury research terminal — search companies, compare holdings, explore on-chain addresses & transactions, read reviews, and generate reports",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sbounmy/bitcoin-companies-skills.git",
+        "sha": "0e12db6aedb6ac1302bbf8a4238dd5a5e386177c"
+      },
+      "homepage": "https://github.com/sbounmy/bitcoin-companies-skills"
+    },
+    {
+      "name": "botboard-biz",
+      "description": "[meta] botboard.biz: social media and journaling capabilities for AI agents",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "botboard-biz",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "brightdata-plugin",
+      "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/brightdata/skills.git",
+        "sha": "e671da495f7ec0ed6be5e9fa71e260f886a1dc36"
+      },
+      "homepage": "https://docs.brightdata.com"
+    },
+    {
+      "name": "bug-fixing-autoreport",
+      "description": "Adds structured error logging, a secure /api/errors endpoint, and a /bug-report command to any Laravel or Node/Express project. Enables Claude to fetch production errors, analyze root causes, and propose fixes.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/maxirodr/bug-fixing-autoreport.git",
+        "sha": "fd4277478864ce66cedbc45deb6f53d4556936bb"
+      },
+      "homepage": "https://github.com/maxirodr/bug-fixing-autoreport"
+    },
+    {
+      "name": "building-multiagent-systems",
+      "description": "Architecture patterns for multi-agent systems with orchestrators, sub-agents, and tool coordination",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "building-multiagent-systems",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "cashflow",
+      "description": "Personal finance ledger for AI agents. Connect your bank accounts via Plaid, then query spending, track recurring bills, categorize transactions, and get financial recaps — all through MCP tools with OAuth authentication.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cashflow-tech/plugin.git",
+        "sha": "f270ddaf2952ae7fc44372cbaad3594ac914c4de"
+      },
+      "homepage": "https://cashflow.tech"
+    },
+    {
+      "name": "cc-terminal-notifier",
+      "description": "Native terminal notifications when Claude Code needs your attention",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/matjic/cc-terminal-notifier.git",
+        "sha": "f14dd5fdcfed1ae259b84247fdad8c4629e7443d"
+      },
+      "homepage": "https://github.com/matjic/cc-terminal-notifier"
+    },
+    {
+      "name": "cf-crawl",
+      "description": "Crawl any website via Cloudflare Browser Rendering API. Free Firecrawl alternative — returns clean markdown, HTML, or JSON. No rate limits, no API keys to buy.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mslugga35/claude-plugin-cf-crawl.git",
+        "sha": "95675d4094f3717372ba4e10663298298173a9e0"
+      },
+      "homepage": "https://github.com/mslugga35/claude-plugin-cf-crawl"
+    },
+    {
+      "name": "checkpoint-architect",
+      "description": "审查点构建助手 - 帮助产品经理通过引导式对话创建符合系统规范的审查点内容",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/breezewang19-lang/checkpoint-architect-plugin.git",
+        "sha": "6d4b0eab846b4ed5f6931bec9562686333ae5381"
+      },
+      "homepage": "https://github.com/breezewang19-lang/checkpoint-architect-plugin"
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "description": "Control and inspect a live Chrome browser from your coding agent. Record performance traces, analyze network requests, check console messages with source-mapped stack traces, and automate browser actions with Puppeteer.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
+        "sha": "c2d8009ff75f76bce1ec4cf79c2467b50d81725e"
+      },
+      "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "name": "claude-backup",
+      "description": "Back up and restore your Claude Code environment",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tombelieber/claude-backup.git",
+        "sha": "b016ff51c085c41d1974b20a025c9521ebc1e6ee"
+      },
+      "homepage": "https://github.com/tombelieber/claude-backup"
+    },
+    {
+      "name": "claude-code-achievements",
+      "description": "Steam-style achievement system for Claude Code",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/subinium/claude-code-achievements.git",
+        "sha": "d05e7530efe08ff20b43b5f655984f54b0327c55"
+      },
+      "homepage": "https://github.com/subinium/claude-code-achievements"
+    },
+    {
+      "name": "claude-forge",
+      "description": "Evidence-first Claude Code plugin for repeatable, spec-driven development workflows.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/JunghyunRyu/claude-forge.git",
+        "sha": "db4b25cc403d83e5ebbbc66867155a2dc5e530a3"
+      },
+      "homepage": "https://github.com/JunghyunRyu/claude-forge"
+    },
+    {
+      "name": "claude-hud",
+      "description": "Real-time statusline HUD for Claude Code - context health, tool activity, agent tracking, and todo progress",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jarrodwatts/claude-hud.git",
+        "sha": "e10c67db09e3c1266ac7a74b080653896591bae3"
+      },
+      "homepage": "https://github.com/jarrodwatts/claude-hud/"
+    },
+    {
+      "name": "claude-md-optimizer",
+      "description": "Optimize oversized CLAUDE.md files using progressive disclosure, content tiers, encryption constraints, and sub-documents.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wrsmith108/claude-md-optimizer.git",
+        "sha": "3c1a5258cfb813a5d6e57ec6bbf5cfc1afa6e3c9"
+      },
+      "homepage": "https://skillsmith.app"
+    },
+    {
+      "name": "claude-review-loop",
+      "description": "Automated code review and swarm remediation for large changesets. Spawns adversarial reviewer agents, presents findings interactively, then dispatches fixer agents to remediate approved issues.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/andytango/claude-review-loop.git",
+        "sha": "e6ea813d6c30bc94e3d2d2e001b2b3ef581ba088"
+      },
+      "homepage": "https://andytango.github.io/claude-review-loop-site/"
+    },
+    {
+      "name": "cletus-loop",
+      "description": "Run iterative agent loops with fresh context per iteration. Each iteration spawns a new Claude process — no accumulated history, no parent contamination.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/omarclaflin/cletus-loop.git",
+        "sha": "f00f2d92c03ea909876661505cf45b45b36d4ba3"
+      },
+      "homepage": "https://github.com/omarclaflin/cletus-loop"
+    },
+    {
+      "name": "clojure-lsp",
+      "description": "Clojure/ClojureScript language server for code intelligence",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jucor/clojure-lsp-plugin.git",
+        "sha": "9012709cbdf4b50c558470562815ef265da97741"
+      },
+      "homepage": "https://github.com/jucor/clojure-lsp-plugin"
+    },
+    {
+      "name": "cloudinary",
+      "description": "Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cloudinary-devs/cloudinary-plugin.git",
+        "sha": "137c5d7acd9c3f10e80cd2a400486971e1664f31"
+      },
+      "homepage": "https://cloudinary.com/documentation"
+    },
+    {
+      "name": "code-review-graph",
+      "description": "Persistent incremental knowledge graph for token-efficient, context-aware code reviews with Claude Code",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tirth8205/code-review-graph.git",
+        "sha": "1bf1c9c5a2ff825070b1d619a564ef4817fdaebb"
+      },
+      "homepage": "https://github.com/tirth8205/code-review-graph"
+    },
+    {
+      "name": "codealive",
+      "description": "CodeAlive context engine for semantic code search and AI-powered codebase Q&A. Enables AI coding agents to understand entire codebases beyond just open files — search across all indexed repositories, trace cross-service dependencies, discover usage patterns, and get synthesized answers to architectural questions. Includes a lightweight code exploration subagent, authentication hooks, and multiple search modes (fast lexical, semantic, and deep cross-cutting). Works standalone or alongside the ...",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/CodeAlive-AI/codealive-skills.git",
+        "sha": "93f21d516eac8c37fd3d18766b7f6a5ef78f580c"
+      },
+      "homepage": "https://docs.codealive.ai/integrations/plugin-claude-code"
+    },
+    {
+      "name": "codebase-quality",
+      "description": "Automated code review for codebase using multiple specialized agents.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/baranbingol1/claude-codebase-quality.git",
+        "sha": "2a735b2227dfb4a281b56eefb0b55b2d06e6612a"
+      },
+      "homepage": "https://github.com/baranbingol1/claude-codebase-quality"
+    },
+    {
+      "name": "coderocket",
+      "description": "Generate production-ready CI/CD workflows from any codebase. CodeRocket analyzes your repo, builds a GitHub Actions pipeline, and opens a PR — zero to deployed in 60 seconds. Supports 8 languages, 15+ frameworks, and every major cloud platform.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mlgraham/coderocket-plugin.git",
+        "sha": "f70fb4b85a47909710192b695729ea6aa8444b34"
+      },
+      "homepage": "https://deploy.coderocket.com"
+    },
+    {
+      "name": "codex-review",
+      "description": "Send your implementation plan to OpenAI Codex CLI for iterative review. Claude and Codex go back-and-forth until Codex approves the plan.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/LuD1161/codex-review-skill.git",
+        "sha": "202ad3becc4111ea169cf78840f04e8b820aa823"
+      },
+      "homepage": "https://codex-review.aseemshrey.in"
+    },
+    {
+      "name": "cold-email",
+      "description": "Generate hyper-personalized cold email sequences using the MachFive API. Real API integration — not prompt templates.",
+      "source": {
+        "source": "git-subdir",
+        "url": "Bluecraft-AI/machfive-skills",
+        "path": "cold-email",
+        "ref": "main",
+        "sha": "e58ece0c1b5d5c9d4ef1a6ab88e76195fd091b9b"
+      },
+      "homepage": "https://machfive.io"
+    },
+    {
+      "name": "compact-guardian",
+      "description": "Prevent task loss during context compaction. Saves recent user instructions and AI progress before compact, then auto-restores them after compaction via SessionStart stdout injection.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ibarapascal/compact-guardian.git",
+        "sha": "af37a3e1401ef5f450573f692f8b9d2882645de9"
+      },
+      "homepage": "https://github.com/ibarapascal/compact-guardian"
+    },
+    {
+      "name": "context-vault",
+      "description": "Persistent structured memory for Claude Code. SQLite JSONB vault with 7 MCP tools for entity CRUD, todos with dependencies, and context injection across compactions.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hazyhaar/context-vault.git",
+        "sha": "757831cf9805701bbe5965cef284cfebc65576b3"
+      },
+      "homepage": "https://github.com/hazyhaar/context-vault"
+    },
+    {
+      "name": "contextstellar",
+      "description": "Context engineering plugin for Claude Code — real-time prompt scoring, RLM adaptive weights, and token optimization. Scores every tool use across 5 dimensions (token utilization, structural clarity, specificity, content density, cache-friendliness) and learns optimal weights for your project.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sunnypatneedi/claude-code-contextstellar.git",
+        "sha": "e1d1fa30eacf18db46b85d1c61a1f8bea0974f43"
+      },
+      "homepage": "https://www.contextstellar.com"
+    },
+    {
+      "name": "corebee",
+      "description": "AI customer support operations toolkit — manage conversations, contacts, knowledge base, analytics, and team workload. 9 skills, 4 agents, 3 commands, hooks, and configurable settings.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jonny-1812/corebee-mcp-skills.git",
+        "sha": "c28d77b6be8f0a34502585c89e12121003ece8bc"
+      },
+      "homepage": "https://corebee.ai"
+    },
+    {
+      "name": "cowork-plugin-management",
+      "source": "./cowork-plugin-management",
+      "description": "Create, customize, and manage plugins tailored to your organization's tools and workflows. Configure MCP servers, adjust plugin behavior, and adapt templates to match how your team works."
+    },
+    {
+      "name": "csharp-lsp-roslyn",
+      "description": "C# language server for code intelligence",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sunghwan2789/csharp-lsp-roslyn.git",
+        "sha": "49fa1635583890ea9dfbac15d55f040a60ae39dd"
+      },
+      "homepage": "https://github.com/sunghwan2789/csharp-lsp-roslyn"
+    },
+    {
+      "name": "css-development",
+      "description": "CSS development workflows with Tailwind composition, semantic naming, and dark mode by default",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "css-development",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "cv-skills",
+      "description": "Skills for performing classical image processing operations: format conversion, SVG rendering, resize/crop/rotate, color adjustment, filters, segmentation/morphology, and compositing/blending",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/garg-aayush/cv-skills.git",
+        "sha": "87751cc219c562431d442e62595d40db9fe6c5f3"
+      },
+      "homepage": "https://github.com/garg-aayush/cv-skills/blob/main/README.md"
+    },
+    {
+      "name": "daloopa",
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "category": "finance",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/daloopa/plugin.git",
+        "sha": "b5641f5bdfb2a44ac541486444cd8a595ccfc49c"
+      },
+      "homepage": "https://github.com/daloopa/plugin"
+    },
+    {
+      "name": "data-engineering",
+      "description": "Data engineering plugin - warehouse exploration, pipeline authoring, Airflow integration",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/astronomer/agents.git",
+        "sha": "85d6053b1e21724f9cefb1e3f5219bd54fc77224"
+      },
+      "homepage": "https://github.com/astronomer/agents"
+    },
+    {
+      "name": "dataink",
+      "description": "AI skills for effective data communication — visualization, storytelling, and infographic design based on Tufte, Few, and Knaflic methodologies",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/oh-da/dataink.git",
+        "sha": "c4f07a1407890514aa39fe25f7e0dd068e4351b0"
+      },
+      "homepage": "https://github.com/oh-da/dataink"
+    },
+    {
+      "name": "db-migration-guard",
+      "description": "Database migration safety plugin that detects dangerous schema changes, warns about locking risks, and suggests zero-downtime migration patterns across Rails, Django, Laravel, and Prisma",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/a-abdellatif98/db-migration-guard.git",
+        "sha": "a5dceb6ca9d895a8e62318f50f0a9dd06d21dd24"
+      },
+      "homepage": "https://github.com/a-abdellatif98/db-migration-guard"
+    },
+    {
+      "name": "dbt-toolkit",
+      "description": "Workflow-oriented dbt project management for Claude Code",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rishav1305/dbt-toolkit.git",
+        "sha": "dd1793e9db0425f6f201e480bce8d75125229366"
+      },
+      "homepage": "https://github.com/rishav1305/dbt-toolkit"
+    },
+    {
+      "name": "debugging-code",
+      "description": "Interactively debug source code — set breakpoints, step through execution, inspect live variables, evaluate expressions, and trace root causes.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AlmogBaku/debug-skill.git",
+        "sha": "7fefada2c42b85856f66119b10587e822cb3061d"
+      },
+      "homepage": "https://github.com/AlmogBaku/debug-skill"
+    },
+    {
+      "name": "delphi-dev",
+      "description": "Delphi development expert for Claude Code. Automatically applies Delphi Style Guide, Clean Code principles, and SOLID patterns. Includes technical audit (laudo técnico), code review, standardized code writing, and project scaffolding.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/adrianosantostreina/delphi-dev.git",
+        "sha": "325c8d0722c4aa1ae1c22abe2917c772593d6c6f"
+      },
+      "homepage": "https://github.com/adrianosantostreina/delphi-dev"
+    },
+    {
+      "name": "demo-st",
+      "description": "Deploy static sites and demos to demo.st: reserve a subdomain, upload a zip, get a live link like yourproject.demo.st. Uses the demo.st MCP server.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/demo-stage/demo.st-Claude.git",
+        "sha": "b7d926645ca110c5f6448017794599aa51b7e05f"
+      },
+      "homepage": "https://demo.st"
+    },
+    {
+      "name": "deploy-on-aws",
+      "description": "Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment.",
+      "category": "deployment",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/deploy-on-aws",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "dev-journal",
+      "description": "Development journal for tracking decisions, sessions, and architecture changes",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/juliuszfedyk/dev-journal.git",
+        "sha": "260412906c35b4807f46e1b5ed30bd81a2c6a4f4"
+      },
+      "homepage": "https://github.com/juliuszfedyk/dev-journal"
+    },
+    {
+      "name": "dev-squad",
+      "description": "Spins up a full AI dev team to implement GitHub issues end-to-end and deliver a PR",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/briannaworkman/dev-squad-plugin.git",
+        "sha": "eb5e3c6ed02d02eb27ea7bfe79418d048cedfe31"
+      },
+      "homepage": "https://github.com/briannaworkman/dev-squad-plugin"
+    },
+    {
+      "name": "diagrams",
+      "description": "Generate professional diagrams from natural language descriptions using Kroki.io. Supports 20+ diagram types including PlantUML, Mermaid, GraphViz, D2, C4, ERD, and more. Automatically selects the optimal diagram type, generates styled scripts, and renders PNG and SVG images.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tirandagan/claude-diagrams.git",
+        "sha": "3940a09744f5abb98b71f0fa440a99f0fb905098"
+      },
+      "homepage": "https://github.com/tirandagan/claude-diagrams"
+    },
+    {
+      "name": "docvet-lsp",
+      "description": "Real-time docstring quality diagnostics for Python files",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Alberto-Codes/docvet.git",
+        "sha": "724b81ebafc461d221bf0548bfc9c71e5ba0823c"
+      },
+      "homepage": "https://alberto-codes.github.io/docvet/"
+    },
+    {
+      "name": "draft",
+      "description": "Context-Driven Development: draft specs and plans before implementation. Structured workflows for features and fixes.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mayurpise/draft.git",
+        "sha": "c1824cbd94f8dc7b43e5de50a0600c295eec2818"
+      },
+      "homepage": "https://github.com/mayurpise/draft"
+    },
+    {
+      "name": "e2e-runner",
+      "description": "JSON-driven E2E browser test runner — no JavaScript test files needed. Parallel execution against a Chrome pool, 28+ built-in actions, visual verification, network debugging, flaky test detection, reusable modules, and a real-time dashboard. Includes 3 specialized agents, 4 slash commands, and 16 MCP tools.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/fastslack/mtw-e2e-runner.git",
+        "sha": "479a0b8ef351f14eababd9b34090c0e69fb07b5d"
+      },
+      "homepage": "https://www.npmjs.com/package/@matware/e2e-runner"
+    },
+    {
+      "name": "echosy",
+      "description": "Read, search, and summarize Echosy meeting transcripts (.echo files) directly from Claude Code",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/woponi/echosy-releases.git",
+        "sha": "067369e9c5dd1ec15a2ca0158f852d141091821f"
+      },
+      "homepage": "https://echosy.org/"
+    },
+    {
+      "name": "email-assistant",
+      "description": "Autonomous email triage and reply system. Drafts replies in your voice, saves as Gmail drafts, and learns from your corrections.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/marian-kamenistak/claude-email-assistant.git",
+        "sha": "9fdf52af8a8930ece879181c4143f9f4472f1e6a"
+      },
+      "homepage": "https://github.com/marian-kamenistak/claude-email-assistant"
+    },
+    {
+      "name": "engram",
+      "description": "Persistent memory for AI agents. Give Claude real memory that survives across sessions -- semantic recall, automatic consolidation, knowledge graphs, and bi-temporal tracking. 92% on DMR benchmark, 80% on LOCOMO.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tstockham96/engram-plugin.git",
+        "sha": "60c2360260efe2058f59094dce88f79675d58226"
+      },
+      "homepage": "https://engram.fyi"
+    },
+    {
+      "name": "enhanced-statusline",
+      "description": "Enhanced status line for Claude Code with 10 themes, feature toggles, session metrics, git status, cache tracking, and cost monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/deepan-g2/claude-statusline-plugin.git",
+        "sha": "060162e2414d1b06458aaac27ca157b387cb2959"
+      },
+      "homepage": "https://github.com/deepan-g2/claude-statusline-plugin"
+    },
+    {
+      "name": "excalidraw",
+      "description": "Generate architecture diagrams as Excalidraw files from natural language",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/yogsma/excalidraw-plugin.git",
+        "sha": "be3f1d43d38608ca8bc10646bc4f1bccc738b129"
+      },
+      "homepage": "https://github.com/yogsma/excalidraw-plugin"
+    },
+    {
+      "name": "fastly-agent-toolkit",
+      "description": "Fastly development tools and platform skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/fastly/fastly-agent-toolkit.git",
+        "sha": "d9ba949011e725be55cae11acc741aa1f1f393d3"
+      },
+      "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md"
+    },
+    {
+      "name": "featuredrop",
+      "description": "AI-assisted product adoption setup — changelogs, tours, checklists, badges, feedback widgets. Helps Claude Code configure FeatureDrop in any project.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/GLINCKER/featuredrop.git",
+        "sha": "b5328352d1c20a0088b0b4c38620392084698758"
+      },
+      "homepage": "ttps://featuredrop.dev"
+    },
+    {
+      "name": "fiftyone",
+      "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/voxel51/fiftyone-skills.git",
+        "sha": "593e0553fc9fd94db52386ada2c9e2074a6ecf89"
+      },
+      "homepage": "https://docs.voxel51.com/"
+    },
+    {
+      "name": "figma-setup",
+      "description": "Figma development environment setup wizard. Installs Figma Desktop, configures the Figma MCP plugin, guides Dev Mode permissions, auto-generates design system rules, and teaches the full Figma-to-code workflow.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/WiseLee0/figma-setup-plugin.git",
+        "sha": "594f8615a42a2b4287e0f827723152794536f526"
+      },
+      "homepage": "https://github.com/WiseLee0/figma-setup-plugin"
+    },
+    {
+      "name": "firebase-development",
+      "description": "Firebase project workflows including setup, features, debugging, and validation",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "firebase-development",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "firetiger",
+      "description": "Claude Code plugin for Firetiger observability workflows and MCP-powered investigations.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/firetiger-oss/claude-plugin.git",
+        "sha": "51421ce20adc7c30eb014e6847c7087ed34cb879"
+      },
+      "homepage": "https://www.firetiger.com/"
+    },
+    {
+      "name": "followrabbit",
+      "description": "Cloud cost optimization for GCP infrastructure. Review changes for cost impact and auto-apply savings recommendations using the followrabbit CLI.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/followrabbit-ai/awesome-rabbit.git",
+        "sha": "f59ec3d1f6337a6ed825ef06836a221ed3d2ffb0"
+      },
+      "homepage": "https://subscriptions.agentic.followrabbit.ai/"
+    },
+    {
+      "name": "foresight-intelligence",
+      "description": "Strategic foresight intelligence using IFTF methodology. Two prediction modes: Soft Predict Future (Claude-native skill, instant, claude.ai + Claude Code) and Hard Predict Future (deterministic 12-step pipeline, Python-computed — Claude Code only). Both output four independent futures (Probable/Plausible/Possible/Preferable) with per-stakeholder conditional analysis. Try: Will India become the global AI leader? Will OpenAI or Anthropic win?",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/isanthoshgandhi/foresight-engine.git",
+        "sha": "78f3348d90e6d0b7565e80221fcec9afbe42e066"
+      },
+      "homepage": "https://github.com/isanthoshgandhi/foresight-engine"
+    },
+    {
+      "name": "fresh-eyes-review",
+      "description": "Mandatory final sanity check before commits/PRs - catches security vulnerabilities, logic errors, and bugs that slip through tests",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "fresh-eyes-review",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "fsd-architect-skill",
+      "description": "Feature-Sliced Design architecture guardian for React, Next.js, Remix, and React Router projects",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/marzun9620/fsd-skill.git",
+        "sha": "50a3bb9a38497d29c0c6769f7f51360c96d87358"
+      },
+      "homepage": "https://feature-sliced.design"
+    },
+    {
+      "name": "gh-dash",
+      "description": "GitHub PR dashboard with CI/CD status indicators and merge capability",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jakozloski/claude-code-gh-dash.git",
+        "sha": "a3b5d4786176aaf7a6fe67932a765eb773494886"
+      },
+      "homepage": "https://github.com/jakozloski/claude-code-gh-dash"
+    },
+    {
+      "name": "glyph",
+      "description": "Idiomatic patterns for building terminal UIs with the glyph Go framework",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kungfusheep/glyph-skill.git",
+        "sha": "54182048243e97a987d985a34bd6eeadd0983df8"
+      },
+      "homepage": "https://useglyph.sh"
+    },
+    {
+      "name": "gobreaker",
+      "description": "Detect breaking changes in Go public APIs. Compares git refs or filesystem paths and reports incompatible/compatible changes using golang.org/x/exp/apidiff.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/flaticols/gobreaker.git",
+        "sha": "60f1a033fb09ad4ae834543749c3cec78fea9721"
+      },
+      "homepage": "https://github.com/flaticols/gobreaker"
+    },
+    {
+      "name": "godot-lsp-bridge",
+      "description": "GDScript language intelligence for Godot 4.x — autocompletion, go-to-definition, hover docs, diagnostics, and scene/resource file support via Godot’s native LSP.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Pixel-Directive-LLC/godot-lsp-bridge.git",
+        "sha": "f1f20c13315be2e0b4ad2f206c41b29d00f69986"
+      },
+      "homepage": "https://github.com/Pixel-Directive-LLC/godot-lsp-bridge"
+    },
+    {
+      "name": "goodmem",
+      "description": "GoodMem memory infrastructure for AI agents. Use Python SDK skills to write code that manages embedders, spaces, and memories, or use MCP tools to perform GoodMem operations directly via natural language.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PAIR-Systems-Inc/goodmem-claude-code-plugin.git",
+        "sha": "215568baf203887b5d7f8245e0503dd4a81336c2"
+      },
+      "homepage": "https://github.com/PAIR-Systems-Inc/goodmem-claude-code-plugin"
+    },
+    {
+      "name": "governance",
+      "description": "Engineering standards and code governance enforcement with parallel agent execution for code reviews, commits, and standards audits.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wrsmith108/governance-claude-skill.git",
+        "sha": "f8ba94a3ce55b28f281412742d0e0d03aa60d61d"
+      },
+      "homepage": "https://skillsmith.app"
+    },
+    {
+      "name": "halyard",
+      "description": "Connect Claude Code to human experts via Slack. Ask questions, get answers, and build organizational knowledge — all without leaving your editor.",
+      "source": {
+        "source": "git-subdir",
+        "url": "halyard-labs/claude-plugin-marketplace",
+        "path": "plugins/halyard",
+        "ref": "main",
+        "sha": "7b57181eafca7ac1ed16cf83ab606e99ab7d03ea"
+      },
+      "homepage": "https://mcp.usehalyard.ai/install"
+    },
+    {
+      "name": "helius",
+      "description": "Build on Solana with Helius — live blockchain tools, expert coding patterns, and autonomous account signup",
+      "source": {
+        "source": "git-subdir",
+        "url": "helius-labs/core-ai",
+        "path": "helius-plugin",
+        "ref": "main",
+        "sha": "05ea4d1128d46618266bbcc23a5e7019c57be0d6"
+      },
+      "homepage": "https://www.helius.dev/docs"
+    },
+    {
+      "name": "hs",
+      "description": "Pre-execution safety layer that blocks dangerous shell commands and credential file reads using pattern matching + LLM analysis. Fail-closed design.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/frmoretto/hardstop.git",
+        "sha": "85ec9bc2812a5a5a682144c844be1c294af7268a"
+      },
+      "homepage": "https://github.com/frmoretto/hardstop"
+    },
+    {
+      "name": "html2figma",
+      "description": "Capture any web page and convert it into an editable Figma design",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/asxelot/html2figma.git",
+        "sha": "e994aee0c4068c91404aca1d5e2f42ce266b4111"
+      },
+      "homepage": "https://github.com/asxelot/html2figma"
+    },
+    {
+      "name": "hubcap",
+      "description": "Chrome DevTools Protocol CLI skill — control Chrome, scrape pages, test web UIs, and automate browsers from Claude Code.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tomyan/claude-skill-hubcap.git",
+        "sha": "9d7d5cb019c6202d1d7f5f7686439d3bbcaaad04"
+      },
+      "homepage": "https://hubcap.tomyandell.dev/skill/"
+    },
+    {
+      "name": "hunaras",
+      "description": "AI-native recruiting platform. Search jobs, manage applications, check AI interview assessments, schedule meetings, rate employers, post jobs, search candidates, and get hiring market insights.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/shaxbozaka/hunaras-mcp.git",
+        "sha": "7ccb3c018ce09853c58439c5b79c7c024517dd1e"
+      },
+      "homepage": "https://hunaras.com"
+    },
+    {
+      "name": "i-ching",
+      "description": "I Ching divination with Wilhelm-Baynes translation using traditional three coins method",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/threemachines/i-ching.git",
+        "sha": "5cbde7a25a741889d3258467643802d89fafcddd"
+      },
+      "homepage": "https://github.com/threemachines/i-ching"
+    },
+    {
+      "name": "icd-classification",
+      "description": "Access WHO ICD-10 and ICD-11 (International Classification of Diseases) codes for diagnosis and procedure coding. ICD is the global standard for recording health conditions and causes of death.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/stayce/icd-mcp-cloudflare.git",
+        "sha": "d563825aa40aa6ba4bf00b80b896392cb6a99284"
+      },
+      "homepage": "https://github.com/stayce/icd-mcp-cloudflare"
+    },
+    {
+      "name": "icf-classification",
+      "description": "Access WHO ICF (International Classification of Functioning, Disability and Health) codes. ICF complements ICD diagnosis codes by describing how health conditions affect a person's functioning in daily life - covering body functions, body structures, activities/participation, and environmental factors.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/stayce/icf-mcp-cloudflare.git",
+        "sha": "47a968e50009835ad700515434ab558a9dc1c2c0"
+      },
+      "homepage": "https://github.com/stayce/icf-mcp-cloudflare"
+    },
+    {
+      "name": "ilo",
+      "description": "Write, run, debug, and explain programs in ilo — a token-optimised programming language for AI agents",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/danieljohnmorris/ilo-lang.git",
+        "sha": "4704712416efea06db93bfb7cd5f29d36315ea2a"
+      },
+      "homepage": "https://github.com/danieljohnmorris/ilo-lang"
+    },
+    {
+      "name": "inclusive-ai",
+      "description": "LGBTQIA+ safety tools for LLM engineers — audit prompts, review code, and catch harms before you ship",
+      "source": {
+        "source": "git-subdir",
+        "url": "InclusiveCode/inclusive-ai",
+        "path": "plugin",
+        "ref": "main",
+        "sha": "2da1ee50f0cc404f415d2282c1185fb2b6b2b74e"
+      },
+      "homepage": "https://inclusive-ai.vercel.app/tools"
+    },
+    {
+      "name": "inference-sh",
+      "description": "AI agent skills for 150+ models via inference.sh CLI - generate images with FLUX, create videos with Veo, call LLMs, search the web, and more",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/inference-sh/skills.git",
+        "sha": "855aeea275dfc438cd1528c808eb652abaded2ed"
+      },
+      "homepage": "https://inference.sh/docs"
+    },
+    {
+      "name": "intercom",
+      "description": "Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/intercom/claude-plugin-external.git",
+        "sha": "eeef353eead2e3dc5f33f64dbaae54e1309e0d45"
+      },
+      "homepage": "https://github.com/intercom/claude-plugin-external"
+    },
+    {
+      "name": "julia-lsp",
+      "description": "Julia language server for code intelligence via LanguageServer.jl",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/alecloudenback/ClaudeCodeJuliaLSP.git",
+        "sha": "6d2862474dc861e78c7f30cfd352630fb5f7e44d"
+      },
+      "homepage": "https://github.com/alecloudenback/ClaudeCodeJuliaLSP"
+    },
+    {
+      "name": "kicad-happy",
+      "description": "KiCad electronics design skills. Analyze schematics, review PCB layouts, download datasheets, source components, and prep boards for fabrication.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/aklofas/kicad-happy.git",
+        "sha": "6af81e9dc8160cc39abb7b6d385c8b2dcaa62780"
+      },
+      "homepage": "https://github.com/aklofas/kicad-happy"
+    },
+    {
+      "name": "lcontext",
+      "description": "Product analytics for AI coding agents. Understand how users navigate your app — where they engage, hesitate, and drop off — then connect behavioral insights directly to code changes.",
+      "source": {
+        "source": "git-subdir",
+        "url": "Lcontext/Lcontext",
+        "path": "plugin",
+        "ref": "main",
+        "sha": "b943ca4d4a5e95dadc63472f18c70606493c4877"
+      },
+      "homepage": "https://github.com/Lcontext/Lcontext/tree/main/plugin"
+    },
+    {
+      "name": "legalzoom",
+      "description": "Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "legalzoom/claude-plugins",
+        "path": "plugins/legalzoom",
+        "ref": "main",
+        "sha": "f9fd8a0ca6e1421bc1aacb113a109663a7a6f6d8"
+      },
+      "homepage": "https://www.legalzoom.com/"
+    },
+    {
+      "name": "link",
+      "description": "Build apps with Supabase as the backend. Equips AI agents with schema-driven workflows, RPC-first data access, edge functions, auth, RLS, and multi-tenancy.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agentlinksh/agent.git",
+        "sha": "2da2aebc19dfdfbbfe8f20f604fdd9a635f3bd90"
+      },
+      "homepage": "https://agentlink.sh/"
+    },
+    {
+      "name": "linkedin-scam-detector",
+      "description": "Detect fake recruiter emails and job offer scams. Requires Claude Code and the Claude in Chrome extension. Opens your email in the browser, analyzes the message, verifies the sender domain and email format against company directories, checks the recruiter's LinkedIn profile directly, searches for the job posting on the company's careers page, and finds a verified phone number to call back — with warnings about spoofed caller ID.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/oopsyz/LinkedIn-Scam-Detector.git",
+        "sha": "6a69d054d897e474130fccfee62cacef54744607"
+      },
+      "homepage": "https://github.com/oopsyz/LinkedIn-Scam-Detector"
+    },
+    {
+      "name": "lisa",
+      "description": "Interactive specification interview workflow that conducts in-depth feature interviews using AskUserQuestion and generates comprehensive specs. Lisa plans. Ralph does.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/blencorp/lisa.git",
+        "sha": "ea4bb125620dadc29de44624c0c6e6f62c4ff972"
+      },
+      "homepage": "https://github.com/blencorp/lisa"
+    },
+    {
+      "name": "logfire",
+      "description": "Pydantic Logfire observability platform integration. Query traces, monitor application performance, analyze logs, and debug issues directly from Claude Code.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/pydantic/logfire-claude-plugin.git",
+        "sha": "3da608785db7f5a6440a7f8a66ed5145dc1e15e6"
+      },
+      "homepage": "https://github.com/pydantic/logfire-claude-plugin"
+    },
+    {
+      "name": "mcp-agent-social",
+      "description": "MCP server for agent social media platform - enables AI agents to interact in team-based discussions",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/2389-research/mcp-socialmedia.git",
+        "sha": "51bcc0e5f2caa36839b302c13c7b0078a55d66f8"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "mcp-apps",
+      "description": "Claude Code skill for building MCP Apps with interactive UIs",
+      "source": {
+        "source": "git-subdir",
+        "url": "modelcontextprotocol/ext-apps",
+        "path": "plugins/mcp-apps",
+        "ref": "main",
+        "sha": "704b6e0af9ec1b3d4a351f12fb2596d2da1e0818"
+      },
+      "homepage": "https://github.com/modelcontextprotocol/ext-apps"
+    },
+    {
+      "name": "mcp-apps-plugin",
+      "description": "Helps you build an MCP App",
+      "source": {
+        "source": "git-subdir",
+        "url": "modelcontextprotocol/ext-apps",
+        "path": "plugins/mcp-apps",
+        "ref": "main",
+        "sha": "30f79b9e3f2525a95a997fce2e5839ab0dd4da96"
+      },
+      "homepage": "https://github.com/modelcontextprotocol/ext-apps/",
+      "category": "Developer Tools"
+    },
+    {
+      "name": "mcp-outline",
+      "description": "Connect Claude Code to Outline for document search, reading, creation, and management",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Vortiago/mcp-outline.git",
+        "sha": "37e6325dd57c0cea5c62b578685bcd88c062afae"
+      },
+      "homepage": "https://github.com/Vortiago/mcp-outline"
+    },
+    {
+      "name": "mcp-reconnect",
+      "description": "Reconnect MCP servers in Claude Code tmux sessions via automated key injection. No API required — works by driving the /mcp interactive menu through tmux send-keys.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/palios-taey/mcp-reconnect.git",
+        "sha": "461a5716299bca581e02f05f201d6f161f054919"
+      },
+      "homepage": "https://github.com/palios-taey/mcp-reconnect"
+    },
+    {
+      "name": "mcp2cli",
+      "description": "Convert MCP servers to token-efficient CLI tools with auto-generated SKILL.md files for Claude Code agents",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/myeolinmalchi/mcp2cli.git",
+        "sha": "59f1f9618fb1f59c355b782381f72e5e9de8d5af"
+      },
+      "homepage": "https://github.com/myeolinmalchi/mcp2cli"
+    },
+    {
+      "name": "md-linker",
+      "description": "Markdown link graph and staleness detection for Claude Code. Automatically tracks cross-references between markdown documents and detects when linked content becomes stale.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Dev-Jahn/md-linker.git",
+        "sha": "b437ed22ce3a0ef9d4b138de58f1c80fae5c8c65"
+      },
+      "homepage": "https://github.com/Dev-Jahn/md-linker"
+    },
+    {
+      "name": "medusa-dev",
+      "description": "Comprehensive skills for building Medusa applications: backend (modules, workflows, API routes), admin UI (widgets, forms, tables), and storefronts (SDK integration, React Query).",
+      "source": {
+        "source": "git-subdir",
+        "url": "medusajs/medusa-claude-plugins",
+        "path": "plugins/medusa-dev",
+        "ref": "main",
+        "sha": "48385888e6fa424fd290f81bdf7a4e2d0b63649c"
+      },
+      "homepage": "https://medusajs.com/"
+    },
+    {
+      "name": "metal-lsp",
+      "description": "Metal Shading Language support — diagnostics, go-to-definition, and hover docs for .metal files via clangd",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rayanht/metal-lsp.git",
+        "sha": "b3fdf6ca5e84e118d8114047eb7c926bfc472111"
+      },
+      "homepage": "https://github.com/rayanht/metal-lsp"
+    },
+    {
+      "name": "migration-to-aws",
+      "description": "Assess current cloud provider usage and billing to estimate and compare AWS services and pricing, with recommendations for migration or continued use of current provider.",
+      "category": "migration",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/migration-to-aws",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "mister-anderson",
+      "description": "Beads development for humans — a structured, human-controlled development pipeline with task tracking, code review gates, and multi-agent orchestration",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/websublime/mister-anderson.git",
+        "sha": "04367f3118c468dc2cc7187154209553bd6b0ee8"
+      },
+      "homepage": "https://github.com/websublime/mister-anderson"
+    },
+    {
+      "name": "modal-model-expert",
+      "description": "Deploy and run fine-tuned LLMs on Modal serverless GPU platform with scale-to-zero autoscaling",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Tigres2526/modal-model-expert.git",
+        "sha": "9005e5562d4465e7ff13290f5d75910d3245c907"
+      },
+      "homepage": "https://github.com/Tigres2526/modal-model-expert"
+    },
+    {
+      "name": "mosaic",
+      "description": "DCVE methodology for systematic project planning, and Discuss for multi-perspective debate and decision-making — both powered by Claude Code agent teams",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/factorshin/mosaic.git",
+        "sha": "38d3615a9df778556d17cda5048f43bfa4006c0e"
+      },
+      "homepage": "https://github.com/factorshin/mosaic"
+    },
+    {
+      "name": "next-ai-drawio",
+      "description": "AI-powered Draw.io diagram generation with real-time browser preview. Create flowcharts, architecture diagrams, and more through natural language.",
+      "source": {
+        "source": "git-subdir",
+        "url": "DayuanJiang/next-ai-draw-io",
+        "path": "packages/claude-plugin",
+        "ref": "main",
+        "sha": "fd84aa70db7c4457807cd93e5e57688cd577d555"
+      },
+      "homepage": "https://github.com/DayuanJiang/next-ai-draw-io/blob/main/packages/mcp-server/"
+    },
+    {
+      "name": "nightvision",
+      "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvsecurity/nightvision-skills.git",
+        "sha": "7d7a3f342bbf4d02b6e012279800cf91ff0c1c97"
+      },
+      "homepage": "https://github.com/nvsecurity/nightvision-skills"
+    },
+    {
+      "name": "nimble",
+      "description": "Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Nimbleway/agent-skills.git",
+        "sha": "cf391e95bd8ac009e3641f172434a1d130dde7fe"
+      },
+      "homepage": "https://docs.nimbleway.com/integrations/agent-skills/plugin-installation"
+    },
+    {
+      "name": "notion-markdown-sync",
+      "description": "Two-way markdown sync for Notion — push, pull, and round-trip local markdown files with Notion pages via the Markdown API. Auto-detects GFM vs Notion format, handles media uploads/downloads, icon replication, and database page properties.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/VegaStack/oss-notion-markdown-sync.git",
+        "sha": "621219155cee6d9d28574a50643ce51e8737017d"
+      },
+      "homepage": "https://github.com/VegaStack/oss-notion-markdown-sync/blob/main/README.md"
+    },
+    {
+      "name": "obsidian-connector",
+      "description": "Access your Obsidian vault from Claude. Search notes, read content, log decisions, manage tasks, and think with your notes -- all through MCP tools.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mariourquia/obsidian-connector.git",
+        "sha": "ded1be71cdfe25a2d2cc8b4fd0db0c7c256ef19c"
+      },
+      "homepage": "https://github.com/mariourquia/obsidian-connector"
+    },
+    {
+      "name": "opentriangle",
+      "description": "Search businesses, check availability, and book appointments on OpenTriangle",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/opentriangle/opentriangle-plugin.git",
+        "sha": "68ad1340ca12224e2d8f8b58c60f615086373a5e"
+      },
+      "homepage": "https://opentriangle.ai"
+    },
+    {
+      "name": "opsera-devsecops",
+      "description": "Opsera DevSecOps Agent — AI-powered architecture analysis, security scanning, compliance auditing, and SQL security for your codebase. Free trial included.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/opsera-agents/opsera-devsecops.git",
+        "sha": "e797228134ee7d3199594eb0ee5a659df40c91da"
+      },
+      "homepage": "https://opsera.ai/agents"
+    },
+    {
+      "name": "optibot",
+      "description": "AI code review that catches production-breaking bugs, business logic issues, and security vulnerabilities — directly in Claude Code.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Optimal-AI/optibot-skill.git",
+        "sha": "981db1f630c3116d7df0a71e5967af55b08e813c"
+      },
+      "homepage": "https://getoptimal.ai"
+    },
+    {
+      "name": "pagerduty",
+      "description": "Enhance code quality and security through PagerDuty risk scoring and incident correlation. Score pre-commit diffs against historical incident data and surface deployment risk before you ship.",
+      "category": "monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PagerDuty/claude-code-plugins.git",
+        "sha": "b16c23e0d790deceaa7a6182616d0e36673f2eae"
+      },
+      "homepage": "https://github.com/PagerDuty/claude-code-plugins"
+    },
+    {
+      "name": "paper-search",
+      "description": "Search academic papers via OpenAlex — find papers by keyword, look up details by DOI, with pagination and sorting",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ykdojo/paper-search.git",
+        "sha": "c8b00fb07aecc98e02f12869ed1c460e5106f162"
+      },
+      "homepage": "https://github.com/ykdojo/paper-search"
+    },
+    {
+      "name": "patent-intelligence",
+      "description": "Patentability assessments, prior art searches, and invention feature mapping for IP law teams.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/FluidityIQ/patent-intelligence-plugin.git",
+        "sha": "20dbaa00722cfabfb415d5061c74fb438a5b9816"
+      },
+      "homepage": "https://github.com/FluidityIQ/patent-intelligence-plugin"
+    },
+    {
+      "name": "peek",
+      "description": "Behavioral memory for Claude Code — automatically learns your preferences and injects relevant context to steer your coding agents.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Project-White-Rabbit/peek-claude-plugin.git",
+        "sha": "334104c0f19a0f71334cd43e7eb5d6174258f6b1"
+      },
+      "homepage": "https://www.gopeek.ai/"
+    },
+    {
+      "name": "pix",
+      "description": "Build frontend on autopilot. Pixel-perfect Figma-to-code with autonomous refinement.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/skobak/pix.git",
+        "sha": "4a5d90096098f3afdd6508fdfd6330827fd7ffc3"
+      },
+      "homepage": "https://github.com/skobak/pix"
+    },
+    {
+      "name": "plan-review",
+      "description": "Multi-perspective plan review with VP Product, VP Engineering, and VP Design for implementation plans and architecture proposals.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wrsmith108/plan-review-skill.git",
+        "sha": "f233c061d07e071dd44b5f626f13c9f3586224ba"
+      },
+      "homepage": "https://skillsmith.app"
+    },
+    {
+      "name": "planetscale",
+      "description": "An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/planetscale/claude-plugin.git",
+        "sha": "f1066cac5bb956bbbb05918f5b07fe0e873d44ea"
+      },
+      "homepage": "https://planetscale.com/"
+    },
+    {
+      "name": "pokemon-pokedex",
+      "description": "Complete Pokemon Pokedex for Claude Code. Covers all 1,025 Pokemon across Generations 1-9 with base stats, abilities, moves, type matchups, and species data. Perfect for Pokedex lookups, Pokemon app development, battle logic, and data analysis.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SNLabat/Pokemon-Pokedex-Plugin.git",
+        "sha": "ecc0165c60307376f4dbaf6438dd8d831ff6cf9a"
+      },
+      "homepage": "https://github.com/SNLabat/Pokemon-Pokedex-Plugin/blob/main/README.md"
+    },
+    {
+      "name": "post-bridge",
+      "description": "Post to Instagram, TikTok, YouTube, X, LinkedIn, Facebook, Pinterest, Threads, and Bluesky via Post Bridge API",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/post-bridge-hq/agent-mode.git",
+        "sha": "1fb2ec9096d9cc4d6fd2493ee7f24de4911a3679"
+      },
+      "homepage": "https://www.post-bridge.com/agents"
+    },
+    {
+      "name": "posthog",
+      "description": "Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code.",
+      "category": "monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PostHog/ai-plugin.git",
+        "sha": "f2f37954ecef9f1afce4fa81b6a612454a96c410"
+      },
+      "homepage": "https://posthog.com/docs/model-context-protocol"
+    },
+    {
+      "name": "postman",
+      "description": "Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, create mocks, publish docs, and audit security. Powered by the Postman MCP Server.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Postman-Devrel/postman-claude-code-plugin.git",
+        "sha": "0714280351c1a137e79aad465a66730511ffbd57"
+      },
+      "homepage": "https://learning.postman.com/docs/developer/postman-mcp-server/"
+    },
+    {
+      "name": "preset-toolkit",
+      "description": "Dashboard management toolkit for Preset/Superset — sync, validate, push, screenshot, visual regression, ownership",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rishav1305/preset-toolkit.git",
+        "sha": "195381415fe2cbb1a11342bf6b531f6239fde18b"
+      },
+      "homepage": "https://github.com/rishav1305/preset-toolkit"
+    },
+    {
+      "name": "prisma",
+      "description": "Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/prisma/claude-plugin.git",
+        "sha": "815dbc4a045a29e3b81510ba0e3ab806f1baaf0e"
+      },
+      "homepage": "https://prisma.io"
+    },
+    {
+      "name": "private-credit",
+      "description": "Domain-specific skills and commands for private credit analysts and portfolio managers at direct lending funds. Covers covenant compliance, EBITDA adjustments, IC memo generation, quarterly monitoring, deal screening, credit modeling, amendment analysis, and scenario testing.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KD-alt20/private-credit-plugin.git",
+        "sha": "5674e78fd74fa39a6782a9f2aabcc457d4efd5cf"
+      },
+      "homepage": "https://goaccretive.ai"
+    },
+    {
+      "name": "private-journal-mcp",
+      "description": "A comprehensive MCP server that provides Claude with private journaling, semantic search, resources, and guided prompts for reflection and learning",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/2389-research/journal-mcp.git",
+        "sha": "4154a71948b5c2d26586e65624dcd173d3669c7e"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "project-boundary",
+      "description": "Blocks destructive commands outside the project directory. Allows file operations within the project (refactoring, cleanup) but prevents accidental damage outside it.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/justi/claude-code-project-boundary.git",
+        "sha": "fef5123fbedbfd2aca2ac8ea47ac6631981351b1"
+      },
+      "homepage": "https://github.com/justi/claude-code-project-boundary"
+    },
+    {
+      "name": "prompt-improver",
+      "description": "Intelligent prompt optimization using skill-based architecture. Enriches vague prompts with research-based clarifying questions before Claude Code executes them",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/severity1/claude-code-prompt-improver.git",
+        "sha": "51bcdebfabffbd03ed35dfda629246d23ea60067"
+      },
+      "homepage": "https://github.com/severity1/claude-code-prompt-improver"
+    },
+    {
+      "name": "promptup",
+      "description": "Automatically improves your prompts — better language, clearer instructions, smarter structure",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zeglin/promptup.git",
+        "sha": "dfc1bd3dc5446107bc3943dcc6ab116958cb6b0d"
+      },
+      "homepage": "https://promptup.dev"
+    },
+    {
+      "name": "public-repo-readiness",
+      "description": "Audits a codebase for secrets, PII, internal infrastructure references, and licensing issues before open-sourcing. Produces a remediation plan.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/dlewis7444/public-repo-readiness.git",
+        "sha": "ba1d7623eb3851d5263d92e0683dea0c82b2e9ff"
+      },
+      "homepage": "https://github.com/dlewis7444/public-repo-readiness"
+    },
+    {
+      "name": "pw",
+      "description": "Production-grade Playwright testing toolkit. Generate tests from specs, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55+ ready-to-use templates, 3 specialized agents, smart reporting that plugs into your existing workflow.",
+      "source": {
+        "source": "git-subdir",
+        "url": "alirezarezvani/claude-skills",
+        "path": "engineering-team/playwright-pro",
+        "ref": "main",
+        "sha": "dc799ac68cfdc454fc55edaf3f054651f645f738"
+      },
+      "homepage": "https://github.com/alirezarezvani/claude-skills"
+    },
+    {
+      "name": "pwp",
+      "description": "Project Workflow Protocol — 11 systematic skills for debugging, code review, security audit, refactoring, migration, API design, performance optimization, project bootstrapping, testing strategy, deployment, and documentation lifecycle.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/shandar/pwp-plugin.git",
+        "sha": "ae80e3630bd7d399ceb3d433d667233fb5452185"
+      },
+      "homepage": "https://affordance.design/protocol"
+    },
+    {
+      "name": "py-pit",
+      "description": "A Claude Code plugin for Python development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/robhowley/claude-py-pit.git",
+        "sha": "51211c2ebc43e2d266ed19ba623150bab4c9d3b0"
+      },
+      "homepage": "https://github.com/robhowley/claude-py-pit"
+    },
+    {
+      "name": "python-remote-debug-skill",
+      "description": "Python 3.14+ remote debugging with sys.remote_exec() for inspecting running processes, including gevent/Celery workers",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/promptromp/python-remote-debug-skill.git",
+        "sha": "2eed16d292ace515f6fcf5217bc9c8c0d8879400"
+      },
+      "homepage": "https://github.com/promptromp/python-remote-debug-skill"
+    },
+    {
+      "name": "qlik-agents",
+      "description": "Multi-agent development pipeline for Qlik Sense. 9-phase workflow from requirements through documentation, powered by practitioner-authored Qlik knowledge.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Pupfish-LLC/qlik-agents.git",
+        "sha": "00317088fbe257560456e2472eb1b8a9da5b5dff"
+      },
+      "homepage": "https://github.com/Pupfish-LLC/qlik-agents/blob/main/README.md"
+    },
+    {
+      "name": "quick-claude",
+      "description": "Fast claude Q&A: routes simple questions to haiku, escalates complex ones to sonnet",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/JustMish/quick-claude.git",
+        "sha": "ef74a54e51605569ac5a8bb24ff2c13d8bace615"
+      },
+      "homepage": "https://github.com/JustMish/quick-claude"
+    },
+    {
+      "name": "railway",
+      "description": "Deploy and manage apps, databases, and infrastructure on Railway. Covers project setup, deploys, environment configuration, networking, troubleshooting, and monitoring.",
+      "category": "deployment",
+      "source": {
+        "source": "git-subdir",
+        "url": "railwayapp/railway-skills",
+        "path": "plugins/railway",
+        "ref": "main",
+        "sha": "d52f3741a6a33a3191d6138eb3d6c3355cb970d1"
+      },
+      "homepage": "https://docs.railway.com/ai/claude-code-plugin"
+    },
+    {
+      "name": "ranger",
+      "description": "E2E testing and feature development tools for Claude Code",
+      "source": {
+        "source": "git-subdir",
+        "url": "ranger-testing/trailhead",
+        "path": "plugins/ranger",
+        "ref": "main",
+        "sha": "a552238b1fc2c206f466cebc090dd03aaf8eb22f"
+      },
+      "homepage": "https://docs.ranger.net/"
+    },
+    {
+      "name": "readdown",
+      "description": "Fetch web pages and convert HTML to clean, LLM-optimized Markdown. Extracts article content, strips boilerplate, estimates token count. No browser needed.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zcag/readdown-plugin.git",
+        "sha": "e9a5eab57a0d105d2dc0fe66dfb42ed45321131c"
+      },
+      "homepage": "https://github.com/zcag/readdown-plugin"
+    },
+    {
+      "name": "remember",
+      "description": "Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
+        "sha": "779ab61d8d412230eeec1840b8ca104bebea4358"
+      },
+      "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
+    },
+    {
+      "name": "remote-system-maintenance",
+      "description": "Structured procedures for Linux system diagnostics and maintenance via SSH/tmux with Ubuntu/Debian cleanup checklists",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "remote-system-maintenance",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "revenuecat",
+      "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
+        "sha": "af7cb77996aee4e7e3c109c5afec81f716139032"
+      },
+      "homepage": "https://www.revenuecat.com"
+    },
+    {
+      "name": "safety-net",
+      "description": "Block destructive git and filesystem commands before execution",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kenryu42/claude-code-safety-net.git",
+        "sha": "fb5ccddca88323632cc6fb49ac6a85053a43c7bd"
+      },
+      "homepage": "https://github.com/kenryu42/claude-code-safety-net"
+    },
+    {
+      "name": "santa-claude",
+      "description": "Festive holiday theme for Claude Code - Santa hats and holiday cheer!",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/stevysmith/santa-claude.git",
+        "sha": "28c097d0ea97088d0cc0e2bb86618de5aa1ed820"
+      },
+      "homepage": "https://github.com/stevysmith/santa-claude"
+    },
+    {
+      "name": "scan-modules",
+      "description": "Scan and cache project module structure for fast Claude context loading. Use /scan-modules:scan-modules to index your codebase, then Claude auto-loads the cache each session. Supports incremental updates via git diff and auto-update via post-commit hook. Works with Swift, TypeScript, Python, Go, and Rust.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/fengzhyuan/scan-modules-plugin.git",
+        "sha": "39aad95ef14aba8bacc363e9e8ba0e610f455d51"
+      },
+      "homepage": "https://github.com/fengzhyuan/scan-modules-plugin/blob/main/README.md"
+    },
+    {
+      "name": "scenario-testing",
+      "description": "End-to-end testing with real dependencies - no mocks allowed; scenarios with real data are the only source of truth",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "scenario-testing",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "scheduler",
+      "description": "Schedule recurring Claude Code tasks with cron expressions",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jshchnz/claude-code-scheduler.git",
+        "sha": "f44464eacf7f159407aec0e7fe83a4d6f9d4e026"
+      },
+      "homepage": "https://github.com/jshchnz/claude-code-scheduler"
+    },
+    {
+      "name": "scientific-coding",
+      "description": "Principles and rules for writing faithful scientific code. Scientific code serves truth, not users. This plugin teaches Claude the fundamental differences between scientific and industry coding.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cemde/Scientific-Coding-Skill.git",
+        "sha": "6e6c2762451c4bfac31d5fcb94cf83193dd13d46"
+      },
+      "homepage": "https://github.com/cemde/Scientific-Coding-Skill"
+    },
+    {
+      "name": "scriptify",
+      "description": "Turn LLM instructions (skills, plugins, prompts) into standalone, deterministic scripts — more reliable than agent calls, with no token cost and faster execution.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ygongdev/scriptify.git",
+        "sha": "ca96a093f3532e15a10fc5a02d79769944277f1d"
+      },
+      "homepage": "https://github.com/ygongdev/scriptify"
+    },
+    {
+      "name": "searchfit-seo",
+      "description": "Free AI-powered SEO toolkit — audit websites, plan content strategy, optimize pages, generate schema markup, cluster keywords, and track AI visibility. Works with any website or codebase.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/searchfit/searchfit-seo.git",
+        "sha": "ced1a99a9fadfc10aa573a05829fc1bd357d4e4c"
+      },
+      "homepage": "https://searchfit.ai"
+    },
+    {
+      "name": "seo-geo-consultant",
+      "description": "Senior SEO & GEO consultant skill for Claude Code. Audits, strategizes, and implements technical SEO, content optimization, structured data, and AI search visibility for SaaS and web applications.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AndreasH96/seo-geo-consultant.git",
+        "sha": "88bdfa66e58a40ce459d691ba8bfaf734fc0a45a"
+      },
+      "homepage": "https://github.com/AndreasH96/seo-geo-consultant"
+    },
+    {
+      "name": "shield",
+      "description": "Security orchestrator — autonomous pentests, SAST, secrets scanning, dependency audits, and outdated checks from your code editor CLI. Wraps Shannon pentester with Semgrep, gitleaks, and package audit tools into a unified security workflow with risk scoring and fix proposals.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/alissonlinneker/shield-claude-skill.git",
+        "sha": "8336d1ba6048ff3e72c8dcee7e496d0cee87eb4b"
+      },
+      "homepage": "https://github.com/alissonlinneker/shield-claude-skill"
+    },
+    {
+      "name": "shortcut",
+      "description": "Lightweight Shortcut.com integration for project management. One tool with 10 actions: search stories, get details, update state/estimate/owner, add comments, create stories, view workflows/members/projects, and raw API access.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/stayce/streamshortcut-cloudflare.git",
+        "sha": "af9dc00eb06a810556cf5b0cc1101132ee2ff800"
+      },
+      "homepage": "https://github.com/stayce/streamshortcut-cloudflare"
+    },
+    {
+      "name": "skill-doctor",
+      "description": "Audits, diagnoses, and upgrades your Claude Code skills and agents",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/amaljithkuttamath/skill-doctor.git",
+        "sha": "22d0cd144f30d277861e966e596a2a266c649b10"
+      },
+      "homepage": "https://github.com/amaljithkuttamath/skill-doctor"
+    },
+    {
+      "name": "skills-updater",
+      "description": "Audit and update Claude Code plugins/skills to their latest versions",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/dcuenot/claude-skills-updater.git",
+        "sha": "f62ea2f1a31a5c69b9e07dd43c9f8fbfc9acd55e"
+      },
+      "homepage": "https://github.com/dcuenot/claude-skills-updater"
+    },
+    {
+      "name": "snipara",
+      "description": "Context optimization + safe code execution - Query docs (90% token reduction), orchestrate multi-round exploration, and execute code with Docker isolation using RLM Runtime",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/alopez3006/snipara-claude.git",
+        "sha": "80f70fab59d3adbcbc66ee2646e2fb1b1d61086e"
+      },
+      "homepage": "https://github.com/alopez3006/snipara-claude"
+    },
+    {
+      "name": "sourcegraph",
+      "description": "Code search and understanding across codebases. Search, read, and trace references across repositories; analyze refactor impact; investigate incidents via commit and diff search; run targeted security sweeps.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sourcegraph-community/sourcegraph-claudecode-plugin.git",
+        "sha": "cfe3d44476957b16d1575261bef6b2dc7cb1e0b7"
+      },
+      "homepage": "https://sourcegraph.com"
+    },
+    {
+      "name": "sourceverify",
+      "description": "Verify academic citations and references using the SourceVerify API",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SourceVerify-ai/sourceverify-skill.git",
+        "sha": "d5379a6d28adf5f87b535cdfbab380b46cd02c3d"
+      },
+      "homepage": "https://sourceverify.ai/en/developers/claude-plugin"
+    },
+    {
+      "name": "specops",
+      "description": "Spec-driven development workflow - transforms ideas into structured specifications (requirements, design, tasks) before implementation.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sanmak/specops.git",
+        "sha": "bc8e10ed79becf8c796b7b4f98a72a91c16eca2e"
+      },
+      "homepage": "https://github.com/sanmak/specops"
+    },
+    {
+      "name": "strands-sdk",
+      "description": "Comprehensive Strands-agents SDK reference for Claude Code — tools, hooks, multi-agent patterns (A2A, swarms, agents-as-tools), prompt caching, guardrails, model providers, metrics, prompt engineering, best practices, and troubleshooting",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sagarr-shellkode/strands-sdk.git",
+        "sha": "da1522d3405b11b1d009f4323e83ceffbc9f9dc4"
+      },
+      "homepage": "https://github.com/sagarr-shellkode/strands-sdk"
+    },
+    {
+      "name": "subgraph-mcp",
+      "description": "Connect Claude to 15,000+ blockchain subgraphs via The Graph's Subgraph MCP server. Query DeFi, NFT, DAO, and governance data in natural language without writing GraphQL.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PaulieB14/subgraph-mcp-skills.git",
+        "sha": "6067c9cd10948a01f81a212bc4259a031afd32e1"
+      },
+      "homepage": "https://github.com/PaulieB14/subgraph-mcp-skills"
+    },
+    {
+      "name": "sumup",
+      "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sumup/sumup-skills.git",
+        "sha": "802476c39a0422d3277e37288b03968ad731bc30"
+      },
+      "homepage": "https://www.sumup.com/"
+    },
+    {
+      "name": "superdevflow",
+      "description": "Claude Code plugin for GitHub Actions debugging, conversation cloning/half-cloning, context handoffs, and CLAUDE.md review",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ykdojo/superdevflow.git",
+        "sha": "b84f82b54074966190e9012ff9e78d38e83eb3ee"
+      },
+      "homepage": "https://github.com/ykdojo/superdevflow"
+    },
+    {
+      "name": "swiftui-macos-skill",
+      "description": "Expert SwiftUI guidance for macOS apps — runtime-level understanding of observation, concurrency, view identity, and platform integration. Built from developing a production macOS browser.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kageroumado/swiftui-macos-skill.git",
+        "sha": "61c1927647c36ff9c40f663e46f243f733a87072"
+      },
+      "homepage": "https://github.com/kageroumado/swiftui-macos-skill"
+    },
+    {
+      "name": "synaptic",
+      "description": "Persistent local memory for Claude Code — cross-session context, semantic search, zero cloud",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/HYPERLYNQ/synaptic.git",
+        "sha": "817854ba2b6a31101b3506696c6062cc4ecaa179"
+      },
+      "homepage": "https://synaptic.dev"
+    },
+    {
+      "name": "sysadmin",
+      "description": "[meta] system administration: structured Linux maintenance and diagnostics",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "sysadmin",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "tenderb",
+      "description": "End-to-end government contract bid management — find opportunities on SAM.gov, qualify bids, analyze solicitations, write proposals, manage pricing, run color team reviews, and track your pipeline. Covers the full bid lifecycle from opportunity discovery through post-award analysis, plus procurement law, contract analysis, and compliance.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/LemonBuzzer123/tenderb_claude_plugin.git",
+        "sha": "c7c209a2679dfb419da4c9e1376526b1f7c62aa6"
+      },
+      "homepage": "https://mcp.tenderb.us/"
+    },
+    {
+      "name": "tenders",
+      "description": "Search, analyze, and monitor European public tenders (TED + 18 national sources) and EU legislation — directly from your AI assistant.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/lexsocket/tenders.git",
+        "sha": "0244269f8f59e4855d158eba56e0798665455077"
+      },
+      "homepage": "https://github.com/lexsocket/tenders"
+    },
+    {
+      "name": "terminal-title",
+      "description": "Automatically updates terminal title with emoji + project + topic context",
+      "source": {
+        "source": "git-subdir",
+        "url": "2389-research/claude-plugins",
+        "path": "terminal-title",
+        "ref": "main",
+        "sha": "8373e340d0508b5e9bdaf1e365db977c4c730761"
+      },
+      "homepage": "https://plugins.2389.dev/"
+    },
+    {
+      "name": "token-saver",
+      "description": "Automatically compresses verbose CLI output (git, docker, npm, terraform, kubectl, etc.) to save tokens in Claude Code sessions. 21 specialized processors with content-aware compression.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ppgranger/token-saver.git",
+        "sha": "61c660fc419991fd45566b2285fcbc6e2315d8ef"
+      },
+      "homepage": "https://github.com/ppgranger/token-saver/blob/main/README.md"
+    },
+    {
+      "name": "twining",
+      "description": "Agent coordination — shared blackboard, decision tracking, and context assembly",
+      "source": {
+        "source": "git-subdir",
+        "url": "daveangulo/twining-mcp",
+        "path": "plugin",
+        "ref": "main",
+        "sha": "4846d7048cd84fe6771ff8c51aac1a29cc96d02b"
+      },
+      "homepage": "https://github.com/daveangulo/twining-mcp"
+    },
+    {
+      "name": "uikit-max",
+      "description": "Reviews UIKit code for modern best practices, covering deprecated APIs, Auto Layout, view controller lifecycle, accessibility, performance, concurrency, and the full iOS 26 overhaul — from iOS 13 through iOS 26.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tornikegomareli/UIKit-Agent-Skill.git",
+        "sha": "6a6312a02c1f30a86dac8fffaeeb5f16d9a3e1d0"
+      },
+      "homepage": "https://github.com/tornikegomareli/UIKit-Agent-Skill"
+    },
+    {
+      "name": "varlock",
+      "description": "Secure environment variable management with Varlock for secrets, API keys, credentials, and sensitive configuration.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wrsmith108/varlock-claude-skill.git",
+        "sha": "348a435345b7ddafb4d1002d41d9e2ef3f5b6992"
+      },
+      "homepage": "https://skillsmith.app"
+    },
+    {
+      "name": "venture-capital-intelligence",
+      "description": "9 skills for venture capital intelligence. 3 run on pure Claude reasoning. 6 run Claude + Python for deterministic outputs — screening startups, modeling financials, sizing markets, computing cap table waterfalls, scanning deal signals, and generating LP fund reports. Built from the best open-source VC tools.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/isanthoshgandhi/venture-capital-intelligence.git",
+        "sha": "2d5f425a61c36cf8c1a77cbcdeb958d1e0e889b2"
+      },
+      "homepage": "https://github.com/isanthoshgandhi/venture-capital-intelligence"
+    },
+    {
+      "name": "visual-explainer-marketplace",
+      "description": "Plugin distribution for visual-explainer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nicobailon/visual-explainer.git",
+        "sha": "61f06e818e8fd49a86351d5981dcc6eeeae2f890"
+      },
+      "homepage": "https://github.com/nicobailon/visual-explainer"
+    },
+    {
+      "name": "vitals",
+      "description": "Codebase vital signs — hotspot detection, ROI-ranked diagnosis, co-change coupling, knowledge risk, and AI provenance tracking",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/chopratejas/vitals.git",
+        "sha": "9c580c8160c7c58cbf2cef821a8d92cfcbb2fd62"
+      },
+      "homepage": "https://chopratejas.github.io/vitals/"
+    },
+    {
+      "name": "voila-api",
+      "description": "Definitive guide for the Voila API. Covers shipment creation (Manual/Smart Shipping), real-time tracking, detailed history, manifesting, collections, webhooks, and third-party integrations (Sorted, Peoplevox, Mintsoft, Veeqo, JD).",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/TSedmanDC/Voila-API-Skill.git",
+        "sha": "b9cfcb860cb5ae4ece57d67422a6cdd92ef96739"
+      },
+      "homepage": "https://github.com/TSedmanDC/Voila-API-Skill"
+    },
+    {
+      "name": "wasp",
+      "description": "Enhances Claude for developing full-stack web apps with Wasp (React, Node.js, Prisma)",
+      "source": {
+        "source": "git-subdir",
+        "url": "wasp-lang/claude-plugins",
+        "path": "plugins/wasp",
+        "ref": "main",
+        "sha": "c47b8b1d5cb3c8bc2e8d3b0176f85b9ceee39b3a"
+      },
+      "homepage": "https://wasp.sh"
+    },
+    {
+      "name": "wave-planner",
+      "description": "Transform project issues into execution-ready implementation plans with risk prediction, wave-based organization, and TDD workflow.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wrsmith108/wave-planner-claude-skill.git",
+        "sha": "35e706119d70b6a44a1eb957f0be6c31c3aac782"
+      },
+      "homepage": "https://skillsmith.app"
+    },
+    {
+      "name": "webscan",
+      "description": "Client-side web security scanner — detects secrets, vulnerable JS libraries, misconfigurations, XSS sinks, CORS issues, and more",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/enderphan94/web_scan.git",
+        "sha": "6c56c7bba3eb7accc09b9034019cb03d57226c33"
+      },
+      "homepage": "https://github.com/enderphan94/web_scan/blob/main/README.md"
+    },
+    {
+      "name": "wezterm-agent-cards",
+      "description": "WezTerm agent sidebar — curses TUI showing Claude Code sessions as stacked status cards with hooks for real-time state tracking.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wrock/wezterm-agent-cards.git",
+        "sha": "9e9b248fa64f7506bd031d081d21409bf494e5b2"
+      },
+      "homepage": "https://github.com/wrock/wezterm-agent-cards/blob/main/README.md"
+    },
+    {
+      "name": "wikipedia",
+      "description": "Fetch Wikipedia articles and data. WebFetch returns 403 on all Wikipedia URLs due to Python user-agent blocking — this plugin provides the curl workaround.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/andyrosa/claude-code-wikipedia-plugin.git",
+        "sha": "8a2a7723657710a6ed111a578be4ecc50269e788"
+      },
+      "homepage": "https://github.com/andyrosa/claude-code-wikipedia-plugin"
+    },
+    {
+      "name": "wix",
+      "description": "Build, manage, and deploy Wix sites and apps. CLI development skills for dashboard extensions, backend APIs, site widgets, and service plugins with the Wix Design System, plus MCP server for site management.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wix/skills.git",
+        "sha": "15dda227e34959b1340e33bb9aede7e23a273f42"
+      },
+      "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
+    },
+    {
+      "name": "workflow",
+      "description": "Structured workflow orchestration for AI agents via finite-state machines",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AxGord/claude-workflow.git",
+        "sha": "0fab3bc19ba8adc3448f7634ab9fc0f305308c8b"
+      },
+      "homepage": "https://github.com/AxGord/claude-workflow"
+    },
+    {
+      "name": "workflow-toolkit",
+      "description": "Get up to speed in any codebase, any size. Non-opinionated workflow plugin with session journaling, local task tracking, GitHub issue sync, knowledge base generation, and lifecycle hooks. All backed by SQLite, all local.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/dougwithseismic/workflow-toolkit.git",
+        "sha": "18cfb858013f60c9ad47b6e7c2dd74a336354039"
+      },
+      "homepage": "https://github.com/dougwithseismic/workflow-toolkit"
+    },
+    {
+      "name": "wu-whatsapp",
+      "description": "WhatsApp integration for Claude Code — send messages, search chats, manage groups via wu-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "ibrahimhajjaj/wu-cli",
+        "path": "claude-plugin",
+        "ref": "main",
+        "sha": "7bd571f2437db40329dcdf114e12cb990a7afd5e"
+      },
+      "homepage": "https://github.com/ibrahimhajjaj/wu-cli"
+    },
+    {
+      "name": "xpoz-social-intelligence",
+      "description": "Real-time social media analysis from Twitter/X and Instagram - brand sentiment, competitive intelligence, and influencer discovery",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/XPOZpublic/xpoz-claude-code-plugins.git",
+        "sha": "23b9d2ee94379146d0577bab17df7451396d2321"
+      },
+      "homepage": "https://github.com/XPOZpublic/xpoz-claude-code-plugins"
+    },
+    {
+      "name": "zapier",
+      "description": "Connect 8,000+ apps to your AI workflow. Discover, enable, and execute Zapier actions directly from your client.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "zapier/zapier-mcp",
+        "path": "plugins/zapier",
+        "ref": "main",
+        "sha": "b93007e9a726c6ee93c57a949e732744ef5acbfd"
+      },
+      "homepage": "https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier"
+    },
+    {
+      "name": "zoominfo",
+      "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Zoominfo/zoominfo-mcp-plugin.git",
+        "sha": "0705316ef8a2d0c64f81e50d4612ccc6a74edf03"
+      },
+      "homepage": "https://zoominfo.com"
+    }
+  ]
 }

@@ -18,7 +18,7 @@ Install plugins from [claude.com/plugins](https://claude.com/plugins/).
 
 ```bash
 claude plugin marketplace add anthropics/claude-plugins-community
-claude plugin install <plugin-name>@claude-plugins-community
+claude plugin install <plugin-name>@claude-community
 ```
 
 ## Submitting a plugin
